@@ -30,17 +30,17 @@ for index in range(1,len(str)+1):
 my_data = data[12:]
 gps_data = my_data[:my_data.index("40")]
 gps = trans(gps_data)
-print(gps)
+print(gps.split(","))
 
 my_data = my_data[my_data.index("40")+1:]
 station_data = my_data[:my_data.index("40")]
 station = trans(station_data)
-print(station)
+print(station.split(","))
 
 my_data = my_data[my_data.index("40")+1:]
 wifi_data = my_data[:my_data.index("40")]
 wifi = trans(wifi_data)
-print(wifi)
+print(wifi.split(","))
 
 my_data = my_data[my_data.index("40")+1:]
 power_data = my_data[:my_data.index("40")]
