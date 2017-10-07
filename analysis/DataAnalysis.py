@@ -6,7 +6,11 @@
 # 382d36303a64383a31393a64323a39333a36342c35382d38303a38393a31
 # 373a33623a38633a35652c35382d38383a32353a39333a31313a39383a38
 # 662c36304031303040314031c6
+import time
+
+from entity.MapWatchData import MapWatchData
 from Until import trans
+
 
 str = "262600db1230dd4637ee903732303135303932342c3130313933302c412c32322e3536343032352c4e2c3131332e3234323332392c452c" \
       "352e32312c3135322c3130304031303133332c353137332c3436302c30312c36362d31303133332c353137332c3436302c30312c3636403" \
@@ -56,5 +60,10 @@ my_data = my_data[my_data.index("40")+1:]
 acc_data = my_data[:-1]
 acc = trans(acc_data)
 print(acc)
+
+mapWatchData = MapWatchData(1,2,3,100,0,0,time.strftime('%Y-%M-%d %H:%m:%s',time.localtime(time.time())),
+                            time.strftime('%Y-%M-%d %H:%m:%s',time.localtime(time.time())),"A","test")
+c
+print(mapWatchData)
 
 
