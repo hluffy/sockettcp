@@ -2,7 +2,7 @@ import pymysql
 
 from entity import MapWatchData
 
-db = pymysql.connect()
+db = pymysql.connect("101.37.34.43","root","root","helemet")
 
 cursor = db.cursor()
 

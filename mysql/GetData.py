@@ -1,7 +1,7 @@
 import pymysql
 
 
-db = pymysql.connect()
+db = pymysql.connect("101.37.34.43","root","root","helemet")
 print(db)
 
 cursor = db.cursor()
