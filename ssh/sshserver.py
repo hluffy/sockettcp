@@ -17,6 +17,7 @@ while True:
         cmd_res = 'cmd has no output....'
 
     conn.send(str(len(cmd_res.encode())).encode('utf-8'))
+    client_ack = conn.recv(1024)    #等待客户端确认，解决粘包
     conn.send(cmd_res.encode('utf-8'))
     print('send done')
 

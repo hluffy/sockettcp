@@ -11,6 +11,7 @@ while True:
     client.send(cmd.encode('utf-8'))
     cmd_res_size = client.recv(1024)
     print('length: ', cmd_res_size)
+    client.send('你瞅啥？'.encode('utf-8'))
 
     received_size = 0
     received_data = ''
