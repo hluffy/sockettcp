@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d53e2e9-211d-41cb-9586-377cab83ea2d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ssh/sshclient.py" afterPath="$PROJECT_DIR$/ssh/sshclient.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ssh/sshserver.py" afterPath="$PROJECT_DIR$/ssh/sshserver.py" />
-    </list>
+    <list default="true" id="0d53e2e9-211d-41cb-9586-377cab83ea2d" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +33,30 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="fileserver.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/file/fileserver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="373">
+              <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fileclient.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/file/fileclient.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="118">
+              <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="client.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python3socket/client.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -59,7 +79,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sshclient.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sshclient.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ssh/sshclient.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
@@ -87,6 +107,8 @@
     <setting file="file://$PROJECT_DIR$/mysql/GetData.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/mysql/SaveData.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/client/Client.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/file/fileserver.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/file/fileclient.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/entity/MapWatchData.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/server/Server.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/analysis/Until.py" root0="SKIP_INSPECTION" />
@@ -111,6 +133,8 @@
         <option value="$PROJECT_DIR$/python3socket/server.py" />
         <option value="$PROJECT_DIR$/ssh/sshserver.py" />
         <option value="$PROJECT_DIR$/ssh/sshclient.py" />
+        <option value="$PROJECT_DIR$/file/fileserver.py" />
+        <option value="$PROJECT_DIR$/file/fileclient.py" />
       </list>
     </option>
   </component>
@@ -167,7 +191,12 @@
             <path>
               <item name="sockettcp" type="b2602c69:ProjectViewProjectNode" />
               <item name="sockettcp" type="462c0819:PsiDirectoryNode" />
-              <item name="ssh" type="462c0819:PsiDirectoryNode" />
+              <item name="file" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sockettcp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sockettcp" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -195,24 +224,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.sshclient">
-    <configuration name="SaveData (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mysql" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="sockettcp" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mysql/SaveData.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.fileclient">
     <configuration name="client" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -230,19 +242,36 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="fileclient" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python3socket" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/file" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="sockettcp" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python3socket/server.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/file/fileclient.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="fileserver" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/file" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="sockettcp" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/file/fileserver.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -282,19 +311,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.SaveData (1)" />
-      <item index="1" class="java.lang.String" itemvalue="Python.server" />
-      <item index="2" class="java.lang.String" itemvalue="Python.client" />
-      <item index="3" class="java.lang.String" itemvalue="Python.sshserver" />
-      <item index="4" class="java.lang.String" itemvalue="Python.sshclient" />
+      <item index="0" class="java.lang.String" itemvalue="Python.client" />
+      <item index="1" class="java.lang.String" itemvalue="Python.sshserver" />
+      <item index="2" class="java.lang.String" itemvalue="Python.sshclient" />
+      <item index="3" class="java.lang.String" itemvalue="Python.fileserver" />
+      <item index="4" class="java.lang.String" itemvalue="Python.fileclient" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.sshclient" />
-        <item index="1" class="java.lang.String" itemvalue="Python.sshserver" />
-        <item index="2" class="java.lang.String" itemvalue="Python.client" />
-        <item index="3" class="java.lang.String" itemvalue="Python.server" />
-        <item index="4" class="java.lang.String" itemvalue="Python.SaveData (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.fileclient" />
+        <item index="1" class="java.lang.String" itemvalue="Python.fileserver" />
+        <item index="2" class="java.lang.String" itemvalue="Python.sshclient" />
+        <item index="3" class="java.lang.String" itemvalue="Python.sshserver" />
+        <item index="4" class="java.lang.String" itemvalue="Python.client" />
       </list>
     </recent_temporary>
   </component>
@@ -627,18 +656,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python3socket/client.py">
+    <entry file="file://$PROJECT_DIR$/ssh/sshclient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python3socket/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        <state relative-caret-position="360">
+          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -653,11 +674,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ssh/sshclient.py">
+    <entry file="file://$PROJECT_DIR$/python3socket/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+        <state relative-caret-position="150">
+          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python3socket/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/fileserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/fileclient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
